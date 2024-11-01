@@ -25,9 +25,14 @@ with open('data/questions.json', 'r') as file:
     questions = json.load(file)
 
 @app.get("/question")
-def read_quote():
-    return random.choice(questions["questions"])
+def read_question():
+    q = random.choice(questions["questions"])
+    return q["question"]
 
 @app.get("/question/all")
 def read_all_questions():
-    return questions
+    return {"questions": [q["question"] for q in questions["questions"]]}
+
+@app.get("/question/{question_id}")
+def read_question_by_id(question_id: int):
+    return questions["questions"][question_id - 1]["question"]
