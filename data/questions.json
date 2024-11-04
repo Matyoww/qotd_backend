@@ -2,42 +2,52 @@
     "questions" : [
         {
             "id" : 1,
+            "category" : "personal",
             "question" : "What is the smallest thing for which you are grateful?"
         },
         {
             "id" : 2,
+            "category" : "personal",
             "question" : "Who has had the most positive impact on your life?"
         },
         {
             "id" : 3,
+            "category" : "personal",
             "question" : "Who has had the most positive impact on your life?"
         },
         {
             "id" : 4,
+            "category" : "fun",
             "question" : "If you could use a time machine, would you rather have one that only goes back in time or only goes forward?"
         },
         {
             "id" : 5,
+            "category" : "career",
             "question" : "If you got a promotion, a job, a college acceptance, an accolade/award, or just generally accomplished something major, who is the first person you'd tell and how do you think they'd react?"
         },
         {
             "id" : 6,
+            "category" : "philosophical",
             "question" : "If you were an inanimate object, what would you be and why?"
         },
         {
             "id" : 7,
+            "category" : "personal",
             "question" : "Where do you wish you had grown up?"
         },
         {
             "id" : 8,
+            "category" : "career",
             "question" : "If you could be good at any profession without having to receive the accompanying education or trade experience, which would you choose?"
         },
         {
             "id" : 9,
+            "category" : "personal",
             "question" : "What is something you're terrible at but wish you could do well?"
         },
         {
             "id" : 10,
+            "category" : "personal",
             "question" : "What is the quality you admire the most in the person you dislike the most?"
         }
     ]

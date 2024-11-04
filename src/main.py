@@ -24,15 +24,18 @@ app.add_middleware(
 with open('data/questions.json', 'r') as file:
     questions = json.load(file)
 
-@app.get("/question")
+@app.get("/question", tags=["question"])
 def read_question():
     q = random.choice(questions["questions"])
     return q["question"]
 
-@app.get("/question/all")
-def read_all_questions():
-    return {"questions": [q["question"] for q in questions["questions"]]}
+@app.get("/question/all", tags=["question"])
+def read_all_questions(include_meta: bool = True):
+    if include_meta:
+        return questions
+    else:
+        return {"questions": [q["question"] for q in questions["questions"]]}
 
-@app.get("/question/{question_id}")
+@app.get("/question/{question_id}", tags=["question"])
 def read_question_by_id(question_id: int):
     return questions["questions"][question_id - 1]["question"]
