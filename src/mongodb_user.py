@@ -6,6 +6,7 @@ import os
 load_dotenv()
 
 mongodb_user = os.getenv("MONGODB_USER")
+print(mongodb_user)
 mongodb_pass = os.getenv("MONGODB_PASS")
 
 uri = f"mongodb+srv://{mongodb_user}:{mongodb_pass}@qotdcluster.lxdq3.mongodb.net/?retryWrites=true&w=majority&appName=qotdCluster"
